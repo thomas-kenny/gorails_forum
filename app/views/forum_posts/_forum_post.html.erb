@@ -1,0 +1,6 @@
+<div class="forum-post">
+    <%= div_for(forum_post) do %>
+    <p class="text-muted">Posted by <%= forum_post.user.email %> <%= forum_post.created_at %></p>
+    <p><%= forum_post.body %></p>
+  <% end %>
+</div>

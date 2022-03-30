@@ -1,0 +1,10 @@
+<h1 class="page-header">Forum Threads</h1>
+<br>
+<%= render @forum_threads %>
+
+<%# <% @forum_threads.each do |thread| %>
+  <%# <li> <%= link_to thread.subject, forum_thread_path(thread) %></li>
+<%# <% end %>
+<br>
+<%= link_to 'New thread', new_forum_thread_path, class: "btn btn-success" %>
+
